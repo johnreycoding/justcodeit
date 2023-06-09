@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="/Html/Facebook.css" />
+
+    <title>Socialbook</title>
+    <script
+      src="https://kit.fontawesome.com/23ba46b23a.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <nav>
+      <div class="nav-left">
+        <img class="logo" src="img/images/logo.png" alt="logo" />
+        <ul class="left-icons">
+          <li>
+            <img class="notif" src="img/images/notification.png" alt="notif" />
+          </li>
+          <li><img class="inbox" src="img/images/inbox.png" alt="inbox" /></li>
+          <li><img class="video" src="img/images/video.png" alt="video" /></li>
+        </ul>
+      </div>
+      <div class="nav-right">
+        <div class="search-box">
+          <img src="/img/images/search.png" alt="search" />
+          <input class="" type="text" placeholder="Search" />
+        </div>
+        <div class="nav-user-icon" onclick="settingsMenuToggle()">
+          <img src="/img/images/profile-pic.png" alt="profile-pic" />
+          <div class="green-dot"></div>
+        </div>
+      </div>
+      <!--settings-menu-->
+      <div class="settings-menu">
+        <div id="dark-btn" class="dark-btn-on">
+          <span></span>
+        </div>
+        <div class="settings-menu-inner">
+          <div class="user-profile">
+            <img src="img/images/profile-pic.png" alt="" />
+            <div>
+              <p>John Rey</p>
+              <a href="#">See your profile</a>
+            </div>
+          </div>
+          <hr />
+          <div class="user-profile">
+            <img src="img/images/feedback.png" alt="" />
+            <div>
+              <p>Give Feedback</p>
+              <a href="#">Help us to improve the new design</a>
+            </div>
+          </div>
+          <hr />
+          <div class="settings-links">
+            <img
+              class="settings-icon"
+              src="/img/images/setting.png"
+              alt="settings"
+            />
+            <a href="#"
+              >settings & Privacy
+              <img src="/img/images/arrow.png" width="10px" />
+            </a>
+          </div>
+          <div class="settings-links">
+            <img
+              class="settings-icon"
+              src="/img/images/help.png"
+              alt="settings"
+            />
+            <a href="#"
+              >Help & Support
+              <img src="/img/images/arrow.png" width="10px" />
+            </a>
+          </div>
+          <div class="settings-links">
+            <img
+              class="settings-icon"
+              src="/img/images/display.png"
+              alt="settings"
+            />
+            <a href="#"
+              >Display & Accessibility
+              <img src="/img/images/arrow.png" width="10px" />
+            </a>
+          </div>
+          <div class="settings-links">
+            <img
+              class="settings-icon"
+              src="/img/images/logout.png"
+              alt="settings"
+            />
+            <a href="#"
+              >Logout
+              <img src="/img/images/arrow.png" width="10px" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class="container">
+      <!--left-sidebar-->
+      <div class="left-sidebar">
+        <div class="imp-links">
+          <a href="#"
+            ><img src="img/images/news.png" alt="news" /> Latest News</a
+          >
+          <a href="#"
+            ><img src="img/images/friends.png" alt="friends" /> Friends</a
+          >
+          <a href="#"><img src="img/images/group.png" alt="group" />Group</a>
+          <a href="#"
+            ><img
+              src="img/images/marketplace.png"
+              alt="marketplace"
+            />Marketplace</a
+          >
+          <a href="#"><img src="img/images/watch.png" alt="watch" />Watch</a>
+          <a href="#">See more</a>
+        </div>
+        <div class="shortcut-links">
+          <p>Your Shortcuts</p>
+          <a href="#"
+            ><img src="img/images/shortcut-1.png" alt="shortcut1" /> Web
+            Developers</a
+          >
+          <a href="#"
+            ><img src="img/images/shortcut-2.png" alt="shortcut2" /> Web Design
+            course</a
+          >
+          <a href="#"
+            ><img src="img/images/shortcut-3.png" alt="shortcut3" /> Full Stack
+            Development</a
+          >
+          <a href="#"
+            ><img src="img/images/shortcut-4.png" alt="shortcut4" /> Website
+            Experts</a
+          >
+        </div>
+      </div>
+      <!--main-content-->
+      <div class="main-content">
+        <div class="story-gallery">
+          <div class="story story1">
+            <img src="img/images/upload.png" alt="upl" />
+            <p>Post story</p>
+          </div>
+          <div class="story story2">
+            <img src="img/images/member-2.png" alt="upl" />
+            <p>Alison</p>
+          </div>
+          <div class="story story3">
+            <img src="img/images/member-3.png" alt="upl" />
+            <p>Jackson</p>
+          </div>
+          <div class="story story4">
+            <img src="img/images/member-4.png" alt="upl" />
+            <p>Sam</p>
+          </div>
+          <div class="story story5">
+            <img src="img/images/member-5.png" alt="upl" />
+            <p>Thom</p>
+          </div>
+        </div>
+        <div class="write-post-container">
+          <div class="user-profile">
+            <img src="img/images/profile-pic.png" alt="" />
+            <div>
+              <p>John Rey</p>
+              <small
+                >Public <i class="fa-sharp fa-solid fa-caret-down"></i
+              ></small>
+            </div>
+          </div>
+          <div class="post-input-container">
+            <textarea
+              rows="3"
+              placeholder="What's on your mind, John?"
+            ></textarea>
+            <div class="add-post-links">
+              <a href="#">
+                <img src="/img/images/live-video.png" alt="" />
+                Live Video
+              </a>
+              <a href="#">
+                <img src="/img/images/photo.png" alt="" />
+                Photo/Video
+              </a>
+              <a href="#">
+                <img src="/img/images/feeling.png" alt="" />
+                Feeling Activity
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="post-container">
+          <div class="post-row">
+            <div class="user-profile">
+              <img src="img/images/profile-pic.png" alt="" />
+              <div>
+                <p>John Rey</p>
+                <span>December 18, 1993, 12:00 mn</span>
+              </div>
+            </div>
+            <a href="#"><i class="fa-sharp fa-solid fa-ellipsis-v"></i></a>
+          </div>
+
+          <p class="post-text">
+            Subscribe <span>@Easy Tutorials</span> YouTube channel to watch more
+            videos on webisite development and UI designs.
+            <a href="#">#EasyTutorials</a>
+            <a href="#">#YouTubeChannel</a>
+          </p>
+          <img class="post-img" src="/img/images/feed-image-1.png" alt="" />
+          <div class="post-row">
+            <div class="activity-icons">
+              <div><img src="/img/images/like-blue.png" alt="" /> 120</div>
+              <div><img src="/img/images/comments.png" alt="" /> 45</div>
+              <div><img src="/img/images/share.png" alt="" /> 20</div>
+            </div>
+            <div class="post-profile-icon">
+              <img src="/img/images/profile-pic.png" alt="" />
+              <i class="fa-sharp fa-solid fa-caret-down"></i>
+            </div>
+          </div>
+        </div>
+        <div class="post-container">
+          <div class="post-row">
+            <div class="user-profile">
+              <img src="img/images/profile-pic.png" alt="" />
+              <div>
+                <p>John Rey</p>
+                <span>December 20, 1993, 9:45 mn</span>
+              </div>
+            </div>
+            <a href="#"><i class="fa-sharp fa-solid fa-ellipsis-v"></i></a>
+          </div>
+
+          <p class="post-text">
+            Like and share this video with friends, tag<span
+              >@Easy Tutorials</span
+            >
+            facebook page on your post. Ask every friend to join the movement
+            this coming Monday only here @HideOutCafe.
+            <a href="#">#EasyTutorials</a>
+            <a href="#">#YouTubeChannel</a>
+          </p>
+          <img class="post-img" src="/img/images/feed-image-2.png" alt="" />
+          <div class="post-row">
+            <div class="activity-icons">
+              <div><img src="/img/images/like.png" alt="" /> 356</div>
+              <div><img src="/img/images/comments.png" alt="" /> 89</div>
+              <div><img src="/img/images/share.png" alt="" /> 44</div>
+            </div>
+            <div class="post-profile-icon">
+              <img src="/img/images/profile-pic.png" alt="" />
+              <i class="fa-sharp fa-solid fa-caret-down"></i>
+            </div>
+          </div>
+        </div>
+        <div class="post-container">
+          <div class="post-row">
+            <div class="user-profile">
+              <img src="img/images/profile-pic.png" alt="" />
+              <div>
+                <p>John Rey</p>
+                <span>December 20, 1993, 9:45 mn</span>
+              </div>
+            </div>
+            <a href="#"><i class="fa-sharp fa-solid fa-ellipsis-v"></i></a>
+          </div>
+
+          <p class="post-text">
+            Like and share this video with friends, tag<span
+              >@Easy Tutorials</span
+            >
+            facebook page on your post. Ask every friend to join the movement
+            this coming Monday only here @HideOutCafe.
+            <a href="#">#EasyTutorials</a>
+            <a href="#">#YouTubeChannel</a>
+          </p>
+          <img class="post-img" src="/img/images/feed-image-3.png" alt="" />
+          <div class="post-row">
+            <div class="activity-icons">
+              <div><img src="/img/images/like.png" alt="" /> 356</div>
+              <div><img src="/img/images/comments.png" alt="" /> 89</div>
+              <div><img src="/img/images/share.png" alt="" /> 44</div>
+            </div>
+            <div class="post-profile-icon">
+              <img src="/img/images/profile-pic.png" alt="" />
+              <i class="fa-sharp fa-solid fa-caret-down"></i>
+            </div>
+          </div>
+        </div>
+        <div class="post-container">
+          <div class="post-row">
+            <div class="user-profile">
+              <img src="img/images/profile-pic.png" alt="" />
+              <div>
+                <p>John Rey</p>
+                <span>December 20, 1993, 9:45 mn</span>
+              </div>
+            </div>
+            <a href="#"><i class="fa-sharp fa-solid fa-ellipsis-v"></i></a>
+          </div>
+
+          <p class="post-text">
+            Like and share this video with friends, tag<span
+              >@Easy Tutorials</span
+            >
+            facebook page on your post. Ask every friend to join the movement
+            this coming Monday only here @HideOutCafe.
+            <a href="#">#EasyTutorials</a>
+            <a href="#">#YouTubeChannel</a>
+          </p>
+          <img class="post-img" src="/img/images/feed-image-4.png" alt="" />
+          <div class="post-row">
+            <div class="activity-icons">
+              <div><img src="/img/images/blue-like.png" alt="" /> 356</div>
+              <div><img src="/img/images/comments.png" alt="" /> 89</div>
+              <div><img src="/img/images/share.png" alt="" /> 44</div>
+            </div>
+            <div class="post-profile-icon">
+              <img src="/img/images/profile-pic.png" alt="" />
+              <i class="fa-sharp fa-solid fa-caret-down"></i>
+            </div>
+          </div>
+        </div>
+        <div class="post-container">
+          <div class="post-row">
+            <div class="user-profile">
+              <img src="img/images/profile-pic.png" alt="" />
+              <div>
+                <p>John Rey</p>
+                <span>December 20, 1993, 9:45 mn</span>
+              </div>
+            </div>
+            <a href="#"><i class="fa-sharp fa-solid fa-ellipsis-v"></i></a>
+          </div>
+
+          <p class="post-text">
+            Like and share this video with friends, tag<span
+              >@Easy Tutorials</span
+            >
+            facebook page on your post. Ask every friend to join the movement
+            this coming Monday only here @HideOutCafe.
+            <a href="#">#EasyTutorials</a>
+            <a href="#">#YouTubeChannel</a>
+          </p>
+          <img class="post-img" src="/img/images/feed-image-5.png" alt="" />
+          <div class="post-row">
+            <div class="activity-icons">
+              <div><img src="/img/images/like.png" alt="" /> 356</div>
+              <div><img src="/img/images/comments.png" alt="" /> 89</div>
+              <div><img src="/img/images/share.png" alt="" /> 44</div>
+            </div>
+            <div class="post-profile-icon">
+              <img src="/img/images/profile-pic.png" alt="" />
+              <i class="fa-sharp fa-solid fa-caret-down"></i>
+            </div>
+          </div>
+        </div>
+
+        <button class="load-more-btn" type="button">Load More</button>
+      </div>
+      <!--right-sidebar-->
+      <div class="right-sidebar">
+        <div class="sidebar-title">
+          <h4>Events</h4>
+          <a href="#">See All</a>
+        </div>
+
+        <div class="event">
+          <div class="left-event">
+            <h3>18</h3>
+            <span>Dec</span>
+          </div>
+          <div class="right-event">
+            <h4>John's Birthday Bash</h4>
+            <p>
+              <i class="fa-sharp fa-solid fa-location-dot"> </i> John's Cribb
+            </p>
+            <a href="#">More Info</a>
+          </div>
+        </div>
+        <div class="event">
+          <div class="left-event">
+            <h3>22</h3>
+            <span>Jun</span>
+          </div>
+          <div class="right-event">
+            <h4>Web Development Bootcamp</h4>
+            <p>
+              <i class="fa-sharp fa-solid fa-location-dot"> </i> Worldtrade
+              Center II
+            </p>
+            <a href="#">More Info</a>
+          </div>
+        </div>
+        <div class="sidebar-title">
+          <h4>Advertisement</h4>
+          <a href="#">Close</a>
+        </div>
+        <img src="img/images/advertisement.png" alt="ads" class="sidebar-ads" />
+        <div class="sidebar-title">
+          <h4>Conversation</h4>
+          <a href="#">Hide Chat</a>
+        </div>
+        <div class="online-list">
+          <div class="online">
+            <img src="/img/images/member-1.png" alt="mem1" />
+            <div class="green-dot"></div>
+          </div>
+          <p>Alison Mina</p>
+        </div>
+        <div class="online-list">
+          <div class="online">
+            <img src="/img/images/member-2.png" alt="mem2" />
+            <div class="green-dot"></div>
+          </div>
+          <p>Eros Myth</p>
+        </div>
+        <div class="online-list">
+          <div class="online">
+            <img src="/img/images/member-3.png" alt="mem3" />
+            <div class="green-dot"></div>
+          </div>
+          <p>Sofie Hizon</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <p>Copyright 2023 - Easy Tutorials YouTube Channel</p>
+    </div>
+  </body>
+  <script src="/Facebook.js"></script>
+</html>
